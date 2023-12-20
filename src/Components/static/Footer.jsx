@@ -84,7 +84,7 @@ const Container = styled.div`
     background-color: hsl(192, 100%, 9%);
     color: #fff;
     width: 100%;
-    height: 1500px;
+    /* height: 1100px; */
     
     display: flex;
     justify-content: center;
@@ -101,13 +101,13 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
-    /* background-color: brown; */
+    background-color: hsl(192, 100%, 9%);
     /* color: #fff; */
     font-family:  "Open Sans";
     font-size: 18px;
-    font-weight: 600;
+    /* font-weight: 600; */
     width: 85%;
-    height: 75px;
+    height: 700px;
 
     display: flex;
     justify-content: space-between;
@@ -115,9 +115,10 @@ const Wrapper = styled.div`
     flex-direction: column; */
 
     @media (max-width: 500px) {
-        /* background-color: blanchedalmond; */
+        background-color: hsl(192, 100%, 9%);
         font-size: 15px;
         width: 95%;
+        height: 700px;
         
         display: flex;
         justify-content: start;
@@ -143,6 +144,10 @@ const LogoDiv = styled.div`
 
     img {
         width: 150px;
+    }
+
+    @media (max-width: 500px) {
+        margin-top: 51px;
     }
 `
 
@@ -182,9 +187,14 @@ const Email = styled.div`
 
     display: flex;
     align-items: center;
+    
 
     img {
         padding-right: 16px;
+    }
+
+    @media (max-width: 500px) {
+        margin-bottom: 610px;
     }
 `
 
@@ -204,6 +214,10 @@ const MKL = styled.div`
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    @media (max-width: 500px) {
+        margin-top: 48px;
     }
 `
 

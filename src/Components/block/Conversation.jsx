@@ -28,7 +28,7 @@ export default Conversation
 
 const Container = styled.div`
     width: 100%;
-    margin-bottom: 200px;
+    margin-bottom: 70px;
 
     display: flex;
     justify-content: center;

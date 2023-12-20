@@ -30,7 +30,7 @@ export default User
 
 const Container = styled.div`
     width: 100%;
-    margin-bottom: 500px;
+    margin-bottom: 50px;
 
     display: flex;
     justify-content: center;

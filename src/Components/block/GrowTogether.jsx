@@ -29,7 +29,7 @@ export default GrowTogether
 const Container = styled.div`
     /* background-color: purple; */
     width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 
     display: flex;
     justify-content: center;
