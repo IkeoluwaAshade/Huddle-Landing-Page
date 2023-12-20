@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Logo from '../../assets/logo.svg'
 import BgDesktop from '../../assets/bg-hero-desktop.svg'
+import BgMobile from '../../assets/bg-hero-mobile.svg'
 
 const Header = () => {
   return (
@@ -34,6 +35,7 @@ const Container = styled.div`
     align-items: center;
 
     @media (max-width: 500px) {
+        background-image: url(${BgMobile});
         margin-top: 21px;
     }
 `
