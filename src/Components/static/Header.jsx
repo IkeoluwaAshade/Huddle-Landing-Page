@@ -32,6 +32,10 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 500px) {
+        margin-top: 21px;
+    }
 `
 
 const Wrapper = styled.div`
