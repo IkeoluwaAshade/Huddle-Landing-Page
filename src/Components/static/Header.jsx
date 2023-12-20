@@ -26,7 +26,7 @@ const Container = styled.div`
     background-image: url(${BgDesktop});
     width: 100%;
     height: 100px;
-    margin-top: 12px;
+    margin-top: 21px;
 
 
     display: flex;
