@@ -39,7 +39,7 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
-    background-color: #123456;
+    /* background-color: #123456; */
     width: 75%;
 
     display: flex;
