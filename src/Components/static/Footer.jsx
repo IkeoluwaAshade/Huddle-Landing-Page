@@ -217,7 +217,7 @@ const MKL = styled.div`
     }
 
     @media (max-width: 500px) {
-        margin-top: 48px;
+        margin-top: 72px;
     }
 `
 
