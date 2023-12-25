@@ -37,6 +37,7 @@ const Container = styled.div`
     @media (max-width: 500px) {
         background-image: url(${BgMobile});
         margin-top: 51px;
+        margin-bottom: 54px;
     }
 `
 
