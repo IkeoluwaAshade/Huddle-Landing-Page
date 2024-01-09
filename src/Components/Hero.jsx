@@ -1,39 +1,47 @@
 import React from 'react'
 import styled from 'styled-components'
-import BgDesktop from '../../assets/bg-hero-desktop.svg'
-import BgMobile from "../../assets/bg-hero-mobile.svg"
-import Mockup from '../../assets/illustration-mockups.svg'
+import Header from '../static/Header'
+import BgDesktop from '../assets/bg-hero-desktop.svg'
+import BgMobile from "../assets/bg-hero-mobile.svg"
+import Mockup from '../assets/illustration-mockups.svg'
 
 const Hero = () => {
   return (
-    <Container>
-        <Wrapper>
+    <Background>
+        <Header />
+        <Container>
+            <Wrapper>
 
-            <HeroText>
-                <h3>
-                    Build The Community <br /> Your Fans Will Love
-                </h3>
+                <HeroText>
+                    <h3>
+                        Build The Community <br /> Your Fans Will Love
+                    </h3>
 
-                <p>
-                    Huddle re-imagines the way we build communities. You have <br /> a voice, but so does your audience. Create connections with <br /> your users as you engage in genuine discussion.
-                </p>
+                    <p>
+                        Huddle re-imagines the way we build communities. You have <br /> a voice, but so does your audience. Create connections with <br /> your users as you engage in genuine discussion.
+                    </p>
 
-                <GetStarted>
-                    Get Started For Free
-                </GetStarted>
+                    <GetStarted>
+                        Get Started For Free
+                    </GetStarted>
 
-            </HeroText>
+                </HeroText>
 
-            <ImgDiv>
-                <img src={Mockup} alt="" />
-            </ImgDiv>
+                <ImgDiv>
+                    <img src={Mockup} alt="" />
+                </ImgDiv>
 
-        </Wrapper>
-    </Container>
+            </Wrapper>
+        </Container>
+    </Background>
   )
 }
 
 export default Hero
+
+const Background = styled.div`
+    
+`
 
 const Container = styled.div`
     background-image: url(${BgDesktop});
