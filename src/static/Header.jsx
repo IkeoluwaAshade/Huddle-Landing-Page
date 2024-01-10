@@ -46,15 +46,15 @@ const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    /* @media (max-width: 500px) {
+    @media (max-width: 500px) {
         width: 95%;
         margin-top: 21px;
-    } */
+    }
 `
 
 const LogoDiv = styled.div`
     
-    width: 150px;
+    width: 130px;
     /* background-color: red; */
 
     img {
@@ -82,8 +82,10 @@ const Tryitfree = styled.button`
     cursor: pointer;
     
 
-    /* @media (max-width: 500px) {
+    @media (max-width: 500px) {
+        width: 120px;
+        height: 30px;
         padding: 4px 21px;
-    } */
+    }
 `
 
