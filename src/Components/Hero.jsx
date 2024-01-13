@@ -51,7 +51,11 @@ const Container = styled.div`
 const Wrapper = styled.div`
     width: 85%;
     font-family: "Poppins";
-
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 `
 
 const TextDiv = styled.div`
