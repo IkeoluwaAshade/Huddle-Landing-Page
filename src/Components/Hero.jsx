@@ -57,10 +57,12 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
     /* background-color: purple; */
-    width: 75%;
-
+    width: 85%;
+    font-family: "Montserrat";
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
     @media (max-width: 500px) {
         /* background-color: orange; */
