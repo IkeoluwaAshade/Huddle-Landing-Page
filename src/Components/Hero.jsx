@@ -5,32 +5,22 @@ import BgDesktop from '../assets/bg-hero-desktop.svg'
 import BgMobile from "../assets/bg-hero-mobile.svg"
 import Mockup from '../assets/illustration-mockups.svg'
 
+
 const Hero = () => {
   return (
     <Background>
         <Header />
         <Container>
             <Wrapper>
-
-                <HeroText>
-                    <h3>
-                        Build The Community <br /> Your Fans Will Love
-                    </h3>
-
-                    <p>
+                <TextDiv>
+                    <Title>Build The Community <br /> Your Fans Will Love</Title>
+                    <Content>
                         Huddle re-imagines the way we build communities. You have <br /> a voice, but so does your audience. Create connections with <br /> your users as you engage in genuine discussion.
-                    </p>
+                    </Content>
+                    <button>Get Started For Free</button>
+                </TextDiv>
 
-                    <GetStarted>
-                        Get Started For Free
-                    </GetStarted>
-
-                </HeroText>
-
-                <ImgDiv>
-                    <img src={Mockup} alt="" />
-                </ImgDiv>
-
+                <ImageDiv><img src={Mockup} alt="" /></ImageDiv>
             </Wrapper>
         </Container>
     </Background>
@@ -40,94 +30,221 @@ const Hero = () => {
 export default Hero
 
 const Background = styled.div`
-    
-`
-
-const Container = styled.div`
     background-image: url(${BgDesktop});
+    background-color: #edfbfe;
+    min-height: 85vh;
     width: 100%;
-
-    display: flex;
-    justify-content: center;
+    height: 100%;
 
     @media (max-width: 500px) {
         background-image: url(${BgMobile});
     }
 `
 
-const Wrapper = styled.div`
-    /* background-color: purple; */
-    width: 85%;
-    font-family: "Montserrat";
+const Container = styled.div`
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-
-    @media (max-width: 500px) {
-        /* background-color: orange; */
-        flex-direction: column;
-        width: 95%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 `
 
-const HeroText = styled.div`
-    /* background-color: green; */
-    /* font-family: "Open Sans"; */
+const Wrapper = styled.div`
+    width: 85%;
+    font-family: "Poppins";
 
-    h3 {
-        /* background-color: red; */
-        color: hsl(192, 100%, 9%);
-        width: 300px;
-        font-size: 21px;
-        
-        @media (max-width: 500px) {
-            /* background-color: orange; */
-            width: 95%;
-            display: flex;
-            justify-content: center;
-            align-items: center; 
-        }
-    }
+`
 
-    p {
-        color: hsl(208, 11%, 55%);
-        padding-right: 20px;
-        font-size: 18px;
+const TextDiv = styled.div`
+    width: 500px;
+    margin-right: 70px;
 
-        @media (max-width: 500px) {
-            /* background-color: orange; */
-            margin-bottom: 2.5rem;
-            
-        }
-    }
-
-    @media (max-width: 500px) {
+    @media (max-width: 800px) {
+        margin: 0;
+        margin-bottom: 30px;
         text-align: center;
-        margin-bottom: 3rem;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    button {
+        background-color: hsl(322, 100%, 66%);
+        color: hsl(193, 100%, 96%);
+        height: 40px;
+        width: 200px;
+        font-family: "Poppins";
+        font-weight: 600;
+        border-radius: 100px;
+        border-style: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);     
     }
 `
 
-const ImgDiv = styled.div`
+const Title = styled.div`
+    font-size: 35px;
+`
+
+const Content = styled.div`
+    color: hsl(208, 11%, 55%);
+    margin-bottom: 20px;
+`
+
+const ImageDiv = styled.div`
+    width: 600px;
+    margin-left: 60px;
+
+    @media (max-width: 800px) {
+        margin: 0;
+    }
 
     img {
-        width: 500px;
-
-        @media (max-width: 500px) {
-            width: 290px;
-            margin-bottom: 8rem;
-        }
+        width: 100%;
     }
 `
 
-const GetStarted = styled.button`
-    background-color: hsl(322, 100%, 66%);
-    color: hsl(193, 100%, 96%);
-    padding: 12px 27px;
-    border-radius: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-style: none;
-`
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react'
+// import styled from 'styled-components'
+// import Header from '../static/Header'
+// import BgDesktop from '../assets/bg-hero-desktop.svg'
+// import BgMobile from "../assets/bg-hero-mobile.svg"
+// import Mockup from '../assets/illustration-mockups.svg'
+
+// const Hero = () => {
+//   return (
+//     <Background>
+//         <Header />
+//         <Container>
+//             <Wrapper>
+
+//                 <TextDiv>
+//                     <Title>
+//                         Build The Community <br /> Your Fans Will Love
+//                     </Title>
+
+//                     <Content>
+//                         Huddle re-imagines the way we build communities. You have <br /> a voice, but so does your audience. Create connections with <br /> your users as you engage in genuine discussion.
+//                     </Content>
+
+//                     <button>
+//                         Get Started For Free
+//                     <button>
+
+//                 </TextDiv>
+
+//                 <ImgDiv>
+//                     <img src={Mockup} alt="" />
+//                 </ImgDiv>
+
+//             </Wrapper>
+//         </Container>
+//     </Background>
+//   )
+// }
+
+// export default Hero
+
+// const Background = styled.div`
+//     background-image: url(${BgDesktop});
+//     min-height: 85vh;
+//     width: 100%;
+//     height: 100%;
+//     background-color: #edfbfe;
+// `
+
+// const Container = styled.div`
+//     width: 100%;
+
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+    
+// `
+
+// const Wrapper = styled.div`
+//     width: 85%;
+//     font-family: "Montserrat";
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-wrap: wrap;
+
+    
+// `
+
+// const TextDiv = styled.div`
+    
+//     width: 500px;
+//     margin-right: 70px;
+
+   
+        
+//         @media (max-width: 800px) {
+//             display: flex;
+//             align-items: center;
+//             flex-direction: column;
+//             margin: 0;
+//             margin-bottom: 30px;
+//             text-align: center;
+//         }
+
+//         button {
+//             background-color: hsl(322, 100%, 66%);
+//             color: hsl(193, 100%, 96%);
+//             height: 40px;
+//             width: 200px;
+//             font-family: "Montserrat";
+//             font-weight: 600;
+//             border-radius: 100px;
+//             border-style: none;
+//             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);        
+//         }
+
+//     p {
+//         color: hsl(208, 11%, 55%);
+//         padding-right: 20px;
+//         font-size: 18px;
+
+//         @media (max-width: 500px) {
+            
+//             margin-bottom: 2.5rem;
+            
+//         }
+//     }
+
+//     @media (max-width: 500px) {
+//         text-align: center;
+//         margin-bottom: 3rem;
+//     }
+// `
+
+// const Title = styled.h1`
+    
+// `
+
+// const ImgDiv = styled.div`
+
+//     img {
+//         width: 500px;
+
+//         @media (max-width: 500px) {
+//             width: 290px;
+//             margin-bottom: 8rem;
+//         }
+//     }
+// ` 
+
