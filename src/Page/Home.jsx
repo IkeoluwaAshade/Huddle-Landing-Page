@@ -3,6 +3,7 @@ import Hero from '../Components/Hero'
 import GrowTogether from '../Components/GrowTogether'
 import Conversation from '../Components/Conversation'
 import Users from '../Components/Users'
+import Footer from '../static/Footer'
 
 
 const Home = () => {
@@ -13,9 +14,8 @@ const Home = () => {
       <GrowTogether />
       <Conversation />
       <Users />
-        
-
-        
+      <Footer />
+                
     </div>
   )
 }

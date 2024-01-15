@@ -31,7 +31,7 @@ export default Hero
 
 const Background = styled.div`
     background-image: url(${BgDesktop});
-    background-color: #edfbfe;
+    background-color: hsl(193, 100%, 96%);
     min-height: 85vh;
     width: 100%;
     height: 100%;
@@ -87,6 +87,7 @@ const TextDiv = styled.div`
 `
 
 const Title = styled.div`
+    color: hsl(192, 100%, 9%);
     font-size: 35px;
 `
 

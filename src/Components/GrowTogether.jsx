@@ -58,8 +58,12 @@ const TextDiv = styled.div`
     width: 420px;
     margin-right: 70px;
 
+    h2 {
+        color: hsl(192, 100%, 9%);
+    }
+
     p {
-        color: gray;
+        color: hsl(208, 11%, 55%);
     }
 
     @media (max-width: 700px) {
