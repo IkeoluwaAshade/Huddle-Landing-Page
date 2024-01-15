@@ -35,6 +35,7 @@ const Background = styled.div`
     min-height: 85vh;
     width: 100%;
     height: 100%;
+    margin-bottom: 150px;
 
     @media (max-width: 500px) {
         background-image: url(${BgMobile});
@@ -60,11 +61,11 @@ const Wrapper = styled.div`
 
 const TextDiv = styled.div`
     width: 500px;
-    margin-right: 70px;
+    /* margin-right: 70px; */
 
     @media (max-width: 800px) {
-        margin: 0;
-        margin-bottom: 30px;
+        /* margin: 0; */
+        margin-bottom: 100px;
         text-align: center;
 
         display: flex;

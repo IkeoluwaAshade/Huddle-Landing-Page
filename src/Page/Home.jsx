@@ -1,5 +1,7 @@
 import React from 'react'
 import Hero from '../Components/Hero'
+import GrowTogether from '../Components/GrowTogether'
+import Conversation from '../Components/Conversation'
 
 
 const Home = () => {
@@ -7,6 +9,8 @@ const Home = () => {
     <div>
         
       <Hero />
+      <GrowTogether />
+      <Conversation />
         
 
         
