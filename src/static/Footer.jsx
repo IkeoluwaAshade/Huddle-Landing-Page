@@ -4,12 +4,15 @@ import LogoImg from '../assets/logo.svg'
 import locationIcon from '../assets/icon-location.svg'
 import telephoneIcon from '../assets/icon-phone.svg'
 import emailIcon from "../assets/icon-email.svg"
+import Facebook from '../assets/facebook.png'
+import X from '../assets/Twitter.png'
+import Instagram from '../assets/Ig.png'
 
 const Footer = () => {
   return (
     <Container>
         <Wrapper>
-        
+              <Hold>
                 <FirstDiv>
 
                   <LogoDiv>
@@ -38,12 +41,39 @@ const Footer = () => {
                 </FirstDiv>
 
                 <SecondDiv>
-                    <PartOne></PartOne>
+                    <PartOne>
+                      <a href="#">About Us</a>
 
-                    <PartTwo></PartTwo>
+                      <a href="#">What We Do </a>
 
-                    <PartThree></PartThree>
+                      <a href="#">FAQ</a>
+                    </PartOne>
+
+                    <PartTwo>
+                      <a href="#">Career</a>
+
+                      <a href="#">Blog</a>
+
+                      <a href="#">Contact Us</a>
+                    </PartTwo>
+
+                    <PartThree>
+                      <Socials>
+                        <img src={Facebook} alt="Facebook Icon" />
+
+                        <img src={X} alt="X Icon" />
+
+                        <img src={Instagram} alt="Instagram Icon" />
+                      </Socials>
+
+                      <p>© Copyright 2018 Huddle. All rights reserved.</p>
+                    </PartThree>
                 </SecondDiv>
+              </Hold>
+
+              <Details>
+                <p>Challenge by <a href="https://www.frontendmentor.io/">Frontend Mentor </a>Coded by <a href="https://www.linkedin.com/in/ikeoluwaashade">Ikeoluwa Ashade</a></p>
+              </Details>
           
         </Wrapper>
     </Container>
@@ -59,7 +89,12 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
+  font-size: 12px;
+`
+
+const Hold = styled.div`
   
+  display: flex;
 `
 
 const FirstDiv = styled.div`
@@ -68,7 +103,6 @@ const FirstDiv = styled.div`
   padding-top: 5rem;
   padding-bottom: 50px;
   margin-left: 5rem;
-  font-size: 12px;
 `
 
 const LogoDiv = styled.div`
@@ -140,13 +174,82 @@ const Email = styled.div`
   }
 `
 
-const SecondDiv = styled.div``
+const SecondDiv = styled.div`
+  padding-top: 6.8rem;
+  width: 75%;
 
-const PartOne = styled.div``
 
-const PartTwo = styled.div``
+  display: flex;
+  justify-content: space-between;
+`
 
-const PartThree = styled.div``
+const PartOne = styled.div`
+  /* background-color: aqua; */
+  width: 90%;
+  line-height: 3rem;
+  margin-right: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  a {
+    margin-left: 45%;
+    text-decoration: none;
+    color: hsl(193, 100%, 96%);
+  }
+`
+
+const PartTwo = styled.div`
+  /* background-color: brown; */
+  width: 90%;
+  line-height: 3rem;
+  margin-right: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  a {
+    margin-left: 40%;
+    text-decoration: none;
+    color: hsl(193, 100%, 96%);
+  }
+`
+
+const PartThree = styled.div`
+  /* background-color: purple; */
+  width: 90%;
+  margin-right: 5rem;
+  padding-top: 12px;
+  line-height: 300px;
+
+  p {
+    font-size: 8px;
+  }
+`
+
+const Socials = styled.div`
+  /* background-color: green; */
+  width: 50%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
+
+const Details = styled.div`
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    color: gold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+`
 
 
 
