@@ -93,8 +93,12 @@ const Wrapper = styled.div`
 `
 
 const Hold = styled.div`
-  
   display: flex;
+
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 const FirstDiv = styled.div`
@@ -103,6 +107,11 @@ const FirstDiv = styled.div`
   padding-top: 5rem;
   padding-bottom: 50px;
   margin-left: 5rem;
+
+  @media (max-width: 500px) {
+    /* background-color: red; */
+    margin-left: 16px;
+  }
 `
 
 const LogoDiv = styled.div`
@@ -178,9 +187,16 @@ const SecondDiv = styled.div`
   padding-top: 6.8rem;
   width: 75%;
 
-
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 500px) {
+    /* background-color: red; */
+    padding-top: 0;
+    
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 const PartOne = styled.div`
@@ -196,6 +212,11 @@ const PartOne = styled.div`
     margin-left: 45%;
     text-decoration: none;
     color: hsl(193, 100%, 96%);
+
+    @media (max-width: 500px) {
+      /* background-color: brown; */
+      margin-left: 16px;
+    }
   }
 `
 
@@ -212,6 +233,11 @@ const PartTwo = styled.div`
     margin-left: 40%;
     text-decoration: none;
     color: hsl(193, 100%, 96%);
+
+    @media (max-width: 500px) {
+      /* background-color: brown; */
+      margin-left: 16px;
+    }
   }
 `
 
@@ -225,6 +251,17 @@ const PartThree = styled.div`
   p {
     font-size: 8px;
   }
+
+  @media (max-width: 500px) {
+    /* background-color: red; */
+    width: 100vw;
+    line-height: 32px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 const Socials = styled.div`
@@ -234,6 +271,19 @@ const Socials = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  img {
+    cursor: pointer;
+  }
+
+  @media (max-width: 500px) {
+    /* background-color: red; */
+    width: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 `
 
 const Details = styled.div`
@@ -242,6 +292,7 @@ const Details = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   a {
     color: gold;
