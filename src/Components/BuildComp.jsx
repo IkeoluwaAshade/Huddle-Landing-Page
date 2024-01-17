@@ -26,11 +26,18 @@ const Card = styled.div`
     font-family: "Poppins";
     margin-bottom: -80px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 12px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    h2 {
+        @media (max-width: 500px) {
+            font-size: 17px;
+        }
+    }
 
     button {
         background-color: hsl(322, 100%, 66%);

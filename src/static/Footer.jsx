@@ -104,7 +104,7 @@ const Hold = styled.div`
 const FirstDiv = styled.div`
   /* background-color: #075a5a; */
   width: 350px;
-  padding-top: 5rem;
+  padding-top: 7rem;
   padding-bottom: 50px;
   margin-left: 5rem;
 
@@ -252,6 +252,10 @@ const PartThree = styled.div`
     font-size: 8px;
   }
 
+  @media (max-width: 800px) {
+    line-height: 18px;
+  }
+
   @media (max-width: 500px) {
     /* background-color: red; */
     width: 100vw;
@@ -274,6 +278,14 @@ const Socials = styled.div`
 
   img {
     cursor: pointer;
+  }
+
+  @media (max-width: 800px) {
+    width: 70%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (max-width: 500px) {
